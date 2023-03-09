@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactHighcharts from 'react-highcharts/ReactHighstock.src'
 import priceData from './btcdata.json'
-import moment from 'moment'
+// import moment from 'moment'
 import axios from "axios";
 
 async function getData() {
