@@ -42,34 +42,26 @@ export const Routes: FC = () => {
 
   return (
     <Switch>
-
-
-      <div>
-
-        <Route path="/admin">
-          <Admin />
-        </Route>
-        <Route exact path="/" component={Home} />
-        <PrivateRoute path="/protected" component={Protected} />
-        <Route path="/login" component={Login} />
-        <Route path="/signup" component={SignUp} />
-        <Route
-          path="/logout"
-          render={() => {
-            logout();
-            history.push('/');
-            return null;
-          }}
-        />
-
-        <Route path="/about" component={About} />
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/insights" component={Insights} />
-        <Route path="/products" component={Products} />
-        <Route path="/request" component={Request} />
-        <Route path="/support" component={Support} />
-        <Footer />
-      </div>
+      <Route path="/admin"><Admin /></Route>
+      <Route exact path="/" component={Home} />
+      <PrivateRoute path="/protected" component={Protected} />
+      <Route path="/login" component={Login} />
+      <Route path="/signup" component={SignUp} />
+      <Route
+        path="/logout"
+        render={() => {
+          logout();
+          history.push('/');
+          return null;
+        }}
+      />
+      <Route path="/about" component={About} />
+      <Route path="/dashboard" component={Dashboard} />
+      <Route path="/insights" component={Insights} />
+      <Route path="/products" component={Products} />
+      <Route path="/request" component={Request} />
+      <Route path="/support" component={Support} />
+      <Footer />
     </Switch>
   );
 };

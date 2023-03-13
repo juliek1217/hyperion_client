@@ -47,12 +47,12 @@ export default function SubscriptionSection() {
   return (
     <div className={classes.container}>
       <Container>
-        <Grid container justify="space-between">
+        <Grid container justifyContent="space-between">
           <Grid
             item
             xs={12}
             md={4}
-            justify="center"
+            justifyContent="center"
             alignItems="center"
             container
           >

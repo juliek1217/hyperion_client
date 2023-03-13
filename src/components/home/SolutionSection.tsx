@@ -79,7 +79,7 @@ export default function DemoSection() {
             <ArrowForwardIcon color="primary" />
           </Link>
         </Box>
-        <Grid container justify="space-between">
+        <Grid container justifyContent="space-between">
           {items.map((item, f) => (
             <Grid
               item

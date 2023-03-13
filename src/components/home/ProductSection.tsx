@@ -66,7 +66,7 @@ export default function ProductSection() {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <Grid container justify="space-between">
+      <Grid container justifyContent="space-between">
         <Grid item xs={12} md={4}>
           <Box style={{ position: "relative" }} mb={10}>
             <Card style={{ height: 300, width: "85%" }}>
@@ -102,7 +102,7 @@ export default function ProductSection() {
             </Box>
           </Grid>
 
-          <Grid container justify="space-between">
+          <Grid container justifyContent="space-between">
             {features.map((item, i) => (
               <Grid item xs={12} md={6} style={{ padding: "0px 10px" }} key={i}>
                 <Typography variant="h6">

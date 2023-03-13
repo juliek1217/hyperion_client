@@ -63,7 +63,7 @@ export default function ContactSection() {
   return (
     <div className={classes.container}>
       <Container>
-        <Grid container justify="center">
+        <Grid container justifyContent="center">
           <Grid item xs={12} sm={6} md={3} style={{ padding: 10 }}>
             <Typography variant="h4" className={classes.title}>
               <b>We're here for you</b>

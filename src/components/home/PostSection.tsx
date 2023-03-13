@@ -111,7 +111,7 @@ export default function PostSection() {
             Latest <b>insights</b>
           </Typography>
         </Grid>
-        <Grid container justify="center">
+        <Grid container justifyContent="center">
           {items.slice(0, 2).map((item, i) => {
             if (i === 0) {
               return (
